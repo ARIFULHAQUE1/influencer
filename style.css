@@ -1,0 +1,255 @@
+*{
+box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+ /* ----------
+    navigation-area
+    -------------- */
+    nav{
+        width:100%;
+        height: 70px;
+        background-color:rgba(149, 221, 149, 0.959);
+       display: flex;
+       justify-content:space-between;
+       align-items: center;
+    }
+nav .title{
+    font-size: 30px;
+    font-weight: bold;
+    color:whitesmoke;
+    padding-left: 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        padding: 0 20px;
+        align-items: center;
+    }
+nav a:hover{
+    color:rgba(110, 66, 153, 0.938);
+}
+.fas.fa-shopping-cart:hover{
+    color: rgb(90, 123, 224);
+}
+.fas.fa-shopping-cart{
+    font-size: 35px;
+}
+/* --navigation area end--- */
+
+body{
+    margin:0px 60px 0 60px;
+    background-color: whitesmoke;
+}
+
+/*---- about-influencer ---*/
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(24, 23, 23, 0.877);
+}
+section{
+    display: flex;
+}
+.about-influencer{
+    width:50%;
+}
+.prebook-area{
+    margin: 50px 20px 20px 0;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+.equipment img{
+    width: 100%;
+}
+.equipment{
+    margin:40px 30px 20px 40px;
+}
+.button{
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    border-radius:5px 10px 9px 5px;
+    color: white;
+    background-color: #E02C6D;
+    border-radius: 25px;
+}
+/* --animation-- */
+
+
+@keyframes slaiding {
+    0% {
+        background-color: forestgreen;
+        left: 0;
+        top: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        top: 230px;
+        background-color: greenyellow;
+        transform: scale(0.5);
+    }
+    75% {
+        bottom: 150px;
+        background-color: hotpink;
+    }
+    100% {
+        background-color: fuchsia;
+        left: 0px;
+        top: 0;
+    }
+}
+
+.ball {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(107, 182, 107);
+    position: relative;
+    border-radius: 50px;
+    animation: slaiding 10s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+
+}
+
+.ball-2 {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(211, 134, 80, 0.952);
+    position: relative;
+    border-radius: 50px;
+    animation: slaiding 10s ease-in-out 5s infinite alternate;
+    animation-play-state: running;
+}
+/* --- products are---
+======================*/
+.products{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: (3 , 1fr);
+    grid-gap: 1em;
+    margin-top:15px;
+    margin-left: 10%;
+    margin-right: 4%;
+margin-bottom: 15px;
+}
+.containner{
+    margin: 20px 10px 20px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.titlel{
+   font-size: 24px;
+   text-align: center; 
+   font-family: 'Roboto Condensed', sans-serif;
+   color: rgba(14, 13, 13, 0.945);
+   margin-top: 40px;
+   padding: 10px;
+   border-bottom:2px solid whitesmoke;
+   border-radius: 5px;
+}
+.product{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-price{
+    font-size: 22px;
+    font-weight: 200px;
+}
+
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(5, 5, 36, 0.938);
+    height: 200px;
+    align-items: center;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 15px;
+}
+/* ---icons-style---- */
+   .fab.fa-twitter:hover{
+        color: blueviolet;
+    }
+   .fab.fa-youtube-square:hover{
+    color: blueviolet;
+   }
+   .fab.fa-facebook-square:hover{
+    color: blueviolet
+   }
+   .fab.fa-linkedin:hover{
+       color: blueviolet;
+   }
+   .fas.fa-star.field{
+       color: goldenrod;
+   }
+   .fa-star.empty{
+    color:#AEAEAE;
+}
+ @media only screen and (max-width:688px) {
+  
+.about-influencer{
+    display: flex;
+    flex-direction: column;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    align-items: center;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+}
+.containner{
+justify-content: center;}
+
+.equipment img{
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
